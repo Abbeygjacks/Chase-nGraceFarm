@@ -1,4 +1,69 @@
 /* Chase 'n Grace Farm - style.css connects to index.html*/
+/* ------------------- MEDIA QUERIES ------------------- */
+
+/* Tablet screens */
+@media (max-width: 900px) {
+  header img {
+    width: 120px;
+  }
+
+  nav ul {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .text-content, .images {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Phone screens */
+@media (max-width: 600px) {
+
+  /* Stack nav vertically and shrink spacing */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+  }
+
+  .hero img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scroll-gallery img {
+    width: 200px;
+  }
+
+  .contact-info {
+    font-size: 14px;
+  }
+
+  #AboutMe img {
+    width: 90%;
+  }
+}
 /* ---------- GLOBAL STYLES ---------- */
 * {
   text-align: center;
@@ -524,3 +589,4 @@ a {
   text-decoration: none;
   color: white;
 }
+
